@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+baseurl = "https://pr0ict.github.io/harvester-user-data/"
+languageCode = "en-us"
+title = "the website title shown on the tab"
+theme = "the same as theme name (exactly the folder name) in your themes folder"
+paginate = 2
+Copyright = "© Yuanyuan GE 2020"
+canonifyurls = true
