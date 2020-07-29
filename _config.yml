@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title: Data4Free
 
-baseurl: /blog
+baseurl: /
 exclude: ['README.md']
 permalink: pretty
 
@@ -13,3 +13,5 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
   extensions: fenced_code_blocks
+  
+<link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet">
