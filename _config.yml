@@ -5,13 +5,5 @@ baseurl: /
 exclude: ['README.md']
 permalink: pretty
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  extensions: fenced_code_blocks
-  
-<link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet">
+
+<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
