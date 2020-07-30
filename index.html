@@ -156,6 +156,10 @@ layout: default
   document.getElementsByClassName('btn')[0].style.visibility = "hidden";
   document.getElementsByClassName('site-footer-owner')[0].style.visibility = "hidden";
   document.getElementsByClassName('site-footer-credits')[0].style.visibility = "hidden"
+  window.setTimeout(function() {
+        document.body.className = document.body.className.replace('site-footer-owner','');
+	document.body.className = document.body.className.replace('site-footer-credits','');
+  }, 10);
   var form = document.getElementById("form_dc");
   document.getElementById("dc_submit").addEventListener("click", function () {
 	  
