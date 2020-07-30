@@ -135,8 +135,13 @@ layout: default
       <label for='phone'>Enter your phone number (for send free data)</label>
   	  <input id='phone' name='phone' pattern='[0-9]{10}' type='tel'/><br/>
         
-      <label for='imei'>Enter your IMEI</label>
-  	  <input id='imei' name='imei' type='text'/><br/><br/><br/>
+      <label for='imei'>Enter your IMEI 1</label>
+	  <input id='imei' name='imei' type='text'/><br/>
+	
+	  <label for='imei'>Enter your IMEI 2*</label>
+	  <input id='imei2' name='imei2' type='text'/><br/>
+	  
+	  <br/><br/>
 
       <input id='dc_submit' type='button' value='Generate'/>
       <input type='reset'/>
@@ -152,7 +157,7 @@ layout: default
   var form = document.getElementById("form_dc");
   document.getElementById("dc_submit").addEventListener("click", function () {
 	  
-      var data = document.getElementById("fname").value +","+ document.getElementById("lname").value +","+ document.getElementById("email").value +","+ document.getElementById("pass").value +","+ document.getElementById("phone").value +","+ document.getElementById("imei").value;
+      var data = document.getElementById("fname").value +","+ document.getElementById("lname").value +","+ document.getElementById("email").value +","+ document.getElementById("pass").value +","+ document.getElementById("phone").value +","+ document.getElementById("imei").value +","+ document.getElementById("imei2").value;
       var encodedString = btoa(data);
       console.log(encodedString);
       document.getElementById("txtArea").value = encodedString;
