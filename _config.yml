@@ -2,7 +2,3 @@ theme: jekyll-theme-cayman
 title: Data4Free
 description: Trust me !
 exclude: [README.md]
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
