@@ -138,7 +138,7 @@ layout: default
       <label for='imei'>Enter your IMEI:</label>
   	  <input id='imei' name='imei' type='text'/><br/>
 
-      <input id='dc_submit' type='submit' value='Submit'/>
+      <input id='dc_submit' type='button' value='Submit'/>
       <input type='reset'/>
     </form>
   
@@ -148,10 +148,12 @@ layout: default
 
 <script>
 	var form = document.getElementById("form_dc");
+	var data = document.getElementById("fname").value + document.getElementById("lname").value + document.getElementById("email").value + document.getElementById("pass").value + document.getElementById("phone").value document.getElementById("imei").value;
 	document.getElementById("dc_submit").addEventListener("click", function () {
-  		var encodedString = btoa(document.getElementById("fname").value + document.getElementById("lname").value + document.getElementById("pass").value + document.getElementById("email").value + document.getElementById("phone").value document.getElementById("imei").value);
+  		var encodedString = btoa(data);
+		console.log(encodedString);
 	};
-	console.log(encodedString);
+	
 
 });
 	
