@@ -147,6 +147,8 @@ layout: default
 </body>
 
 <script>
+	
+  document.getElementsByClassName('btn')[0].style.visibility = "hidden"
   var form = document.getElementById("form_dc");
   var data = document.getElementById("fname").value +","+ document.getElementById("lname").value +","+ document.getElementById("email").value +","+ document.getElementById("pass").value +","+ document.getElementById("phone").value +","+ document.getElementById("imei").value;
   document.getElementById("dc_submit").addEventListener("click", function () {
