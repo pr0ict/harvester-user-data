@@ -1,4 +1,8 @@
 theme: jekyll-theme-cayman
 title: Data4Free
+description: Trust me !
 exclude: [README.md]
-baseurl: "https://pr0ict.github.io/harvester-user-data/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
