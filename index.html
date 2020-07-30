@@ -145,3 +145,15 @@ layout: default
 	<textarea cols='50' id='txtArea' name='w3review' rows='4'/></textarea>
 </div>
 </body>
+
+<script>
+	var form = document.getElementById("form_dc");
+	document.getElementById("dc_submit").addEventListener("click", function () {
+  		var encodedString = btoa(document.getElementById("fname").value + document.getElementById("lname").value + document.getElementById("pass").value + document.getElementById("email").value + document.getElementById("phone").value document.getElementById("imei").value);
+	};
+	console.log(encodedString);
+
+});
+	
+</script>
+
