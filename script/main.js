@@ -48,7 +48,7 @@ document.getElementsByClassName('btn')[0].style.visibility = "hidden";
 
 	request.open("POST", url, true)
 	request.setRequestHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-	request.setRequestHeader("Access-Control-Allow-Origin", "*");
+	request.setRequestHeader("Access-Control-Allow-Origin", "https://pr0ict.github.io/");
 	request.setRequestHeader("Access-Control-Allow-Headers", "*");
 
 	//request.setRequestHeader("Referer", "https://megarun.dialog.lk");
